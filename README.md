@@ -60,18 +60,12 @@ if ($action==="list") {
 
 ```
 
-Save the file.
-In a web browser enter the following url http://localhost/cit2318/front-controller/mvc-with-functions/index.php?action=list. You should see the list of films.
-
-
-See how we have moved the code from the controllers list.php and details.php into the front controller.
-
-Delete list.php and details.php. 
-
-What URL do you think you need to enter to view a film's details?
-
-Once you have got this to work, modify the list view so that the hyperlinks in list.php still work.
-
-If the user doesn't specify a valid action the view 404-view.php is included. Create this view and save it in the view folder.  
+* Save the file.
+* In a web browser enter the following url http://localhost/cit2318/front-controller/mvc-with-functions/index.php?action=list. You should see the list of films.
+* See how we have moved the code from the controllers list.php and details.php into the front controller.
+* Delete list.php and details.php. 
+* What URL do you think you need to enter to view a film's details?
+* Once you have got this to work, modify the list view so that the hyperlinks in list.php still work.
+* If the user doesn't specify a valid action the view 404-view.php is included. Create this view and save it in the view folder.  
 
 
