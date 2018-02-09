@@ -7,16 +7,14 @@
 </head>
 <body>
 <ul>
-<li><a href="create.php">Create</a></li>
-<li><a href="list.php">Read</a></li>
-<li><a href="edit-list.php">Update</a></li>
-<li><a href="delete-list.php">Delete</a></li>
+<li><a href="index.php?action=create">Create</a></li>
+<li><a href="index.php?action=list">Read</a></li>
 </ul>
 <?php
 //loop over the array of films
 foreach ($films as $film) {
     echo "<p>";
-    echo "<a href='details.php?id=".$film["id"]."'>";
+    echo "<a href='index.php?action=details&id=".$film["id"]."'>";
     echo $film["title"];
     echo "</a>";
     echo "</p>";
