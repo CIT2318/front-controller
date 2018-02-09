@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Film details</title>
+<title>Save the film</title>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 </head>
 <body>
@@ -10,13 +10,7 @@
 <li><a href="list.php">Read</a></li>
 </ul>
 <?php
-if($film){
-	echo "<h1>".$film['title']."</h1>";
-	echo "<ul>";
-	echo "<li>Year: ".$film['year']."</li>";
-	echo "<li>Duration: ".$film['duration']."</li>";
-	echo "</ul>";
-}
+echo $msg;
 ?>
 </body>
 </html>

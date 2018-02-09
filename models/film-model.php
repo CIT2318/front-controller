@@ -33,7 +33,20 @@ function getFilmById($filmId)
 	closeConnection($conn);
 	return $film;
 }
-
+function saveFilm($title, $year, $duration){
+	$conn = getConnection();
+	$query="INSERT INTO films (id, title, year, duration) VALUES (NULL, :title, :year, :duration)";
+	$stmt=$conn->prepare($query);
+	$stmt->bindValue(':title', $title);
+	$stmt->bindValue(':year', $year);
+	$stmt->bindValue(':duration', $duration);
+	$affected_rows = $stmt->execute();
+	closeConnection($conn);
+	if($affected_rows==1){
+		return true;
+	}
+	return false;
+}
 
 
 ?>
