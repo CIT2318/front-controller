@@ -8,6 +8,8 @@
 <ul>
 <li><a href="create.php">Create</a></li>
 <li><a href="list.php">Read</a></li>
+<li><a href="index.php?action=create">Create</a></li>
+<li><a href="index.php?action=list">Read</a></li>
 </ul>
 <?php
 echo $msg;
