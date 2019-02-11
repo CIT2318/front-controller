@@ -50,7 +50,6 @@ It is fairly obvious that there is a lot of duplicate code in the two controller
 ```php
 <?php
 require_once("models/film-model.php");
-require_once("controllers/film-controller.php");
 
 if(isset($_GET["action"])){
     $action=$_GET['action'];
