@@ -40,12 +40,8 @@ function saveFilm($title, $year, $duration){
 	$stmt->bindValue(':title', $title);
 	$stmt->bindValue(':year', $year);
 	$stmt->bindValue(':duration', $duration);
-	$affected_rows = $stmt->execute();
+	$stmt->execute();
 	closeConnection($conn);
-	if($affected_rows==1){
-		return true;
-	}
-	return false;
 }
 
 
